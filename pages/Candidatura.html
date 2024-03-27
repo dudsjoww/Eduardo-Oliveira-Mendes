@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url(../images/home/sean-pollock-PhYq704ffdA-unsplash.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="../index.html">Trabalho N1 - Forms</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="nav-end" class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Candidatura.html" class="nav-link">Trabalhe Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#doubt" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content2 container-fluid mt-5">
+        <div class="container03">
+            <div class="card card-login Candidate p-4"> 
+                <h2>Cadastro a Candidatura</h2>
+                <form action="" class="form-group row">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="name" class="input-group-text">Nome e Ultimo Sobrenome</label>
+                            <input type="text" class="form-control" id="name">
+                            <input id="sobrenome" class="form-control"type="text">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="CPF" class="input-group-text">CPF</label>
+                        <input type="text" class="form-control" id="CPF" required>
+                    </div>
+                        <div class="input-group">
+                            <label for="" class="input-group-text">Email</label>
+                            <input type="email" class="form-control">
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="genero" id="masc" class="form-check-input">
+                        <label for="masc" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="genero" id="fem" class="form-check-input">
+                        <label class="form-check-label" for="fem">Feminino </label>
+                    </div>
+                    <!-- FORM CIDADE UF CEP -->
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <label for="selectCity" class="input-group-text">Cidade</label>
+                                <select name="selectCity" id="selectCity" class="form-select">
+                                    <option selected>Escolha!</option>
+                                    <option value="POA">Porto Alegre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="" class="input-group-text">Estado</label>
+                                <select name="UF" id="UF" class="form-select">
+                                    <option class="form-select" value="UF">Estado</option>
+                                    <option selected value="RS">RS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group col-sm">
+                            <label for="CEP" class="input-group-text">CEP</label>
+                            <input type="text" class="form-control" placeholder="000000-000">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="esf" id="esf" class="form-check-input">
+                        <label for="esf" class="form-check-label">Esforçado</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="proat" id="proat" class="form-check-input">
+                        <label class="form-label" for="proat" class="form-check-label">Pró-ativo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="human" checked>
+                        <label for="human" class="form-check-label">Humano</label>
+                    </div>
+                        
+                    <button class="btn btn-danger" type="Envio">Enviar os dados</button>
+                </form>
+                
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <form action="".class="form-group" id="doubt">
+          <h3>Duvidas ou Feedback para a Empresa :D</h3>
+          <div class="mb-3">
+            <label for="emailInputContact" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInputContact" placeholder="email@gmail.com">
+          </div>
+          <div>
+            <label for="commentFeedback" class="form-label">Digite sua dúvida!</label>
+            <textarea class="form-control" id="commentFeedback" rows="5" placeholder="Digite sua duvida para a empresa! :D"></textarea>
+          </div>
+          <button class="btn btn-danger mt-2">Enviar</button>
+        </form>
+        <div class="mt-auto">
+          <h4>Info</h4>
+          Todos os direitos não reservados com direito a imagens não licenciadas &copy; Eduardo Oliveira Mendes
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

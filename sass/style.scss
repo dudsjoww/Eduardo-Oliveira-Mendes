@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: white;
+}
+.title{
+    width: 30%;
+    flex: 1;
+}
+.container01{
+    margin-top: 5%;
+}
+.container02{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        min-width: 200px;
+        width: 20%;
+        height: 20%;
+    }
+}
+#card-image{
+    height: 400px;
+    object-fit: cover;
+}
+
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 3%;
+}
+
+// Page Candidatura
+.container03{
+    margin:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-login{
+        
+        border-radius: 20px;
+        .Candidate{
+            width: 90%;
+        }
+        
+    }
+    .input-group{
+        margin-bottom: 2%;
+    }
+}
+
+//Page Login
+.Client{
+    width: 50%;
+}
+
+
+
+
+//Page Payment
+.Payment{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 5%;
+}
+.compraSector{
+    grid-column: auto;    
+}
+.infoSector{
+    grid-column: 3;
+}
